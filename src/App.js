@@ -18,7 +18,7 @@ export default function App(){
         <div>
             <NavComponent/>
             <Routes>
-                <Route exact path='/' element={<Home/>}/>
+                <Route exact path='/UptoWeather/' element={<Home/>}/>
                 <Route path='/contact' element={<Contact/>}/>
                 <Route path='/news' element={<News/>}/>
                 <Route path='/education' element={<Education/>}/>

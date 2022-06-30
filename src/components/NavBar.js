@@ -21,7 +21,7 @@ export default function NavComponent(){
                             <hr className="hrd_4"/>
                         
                         </div>
-                        <li><NavLink className='link' to='/'>Home <i class="nav--more fas fa-caret-down"></i></NavLink></li>
+                        <li><NavLink className='link' to='/UptoWeather/'>Home <i class="nav--more fas fa-caret-down"></i></NavLink></li>
                         <li><NavLink className='link' to='/news'>Alerts <i class="nav--more fas fa-caret-down"></i></NavLink></li>
                         <li><NavLink className='link' to='/forecast'>Forecast <i class="nav--more fas fa-caret-down"></i> </NavLink></li>
                         <li><NavLink className='link' to='/education'>Education <i class="nav--more fas fa-caret-down"></i></NavLink></li>
