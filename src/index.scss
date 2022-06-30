@@ -1,0 +1,713 @@
+
+//using mixins in scss;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:wght@300&family=Poppins:ital,wght@0,400;1,500&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:wght@300&family=Poppins:ital,wght@0,400;1,500&family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
+
+$main-font-family:'Montserrat';
+$main-color:rgb(17, 17, 38);
+$main-text-color:white;
+$font-fam:'Raleway';
+$main-font:sans-serif;
+@for $i from 1 through 4 {
+    .info_#{$i}{
+        color: white;
+        font-size: 20px;
+        font-family:'Raleway' ,sans-serif;
+        opacity: 1;
+        margin-top: 10px;
+       
+    }
+
+    
+}
+
+@mixin flexrow($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+
+}
+.hm--text>h2{
+    outline:1px solid #AD9D48;
+    padding: 3px 3px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 20px;
+
+}
+.hm--text{
+   
+    width: 100%;
+    @include flexrow(column);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 33%;
+    color: white;
+    font-family: $font-fam;
+ 
+}
+.hm--text>h3{
+    font-family: $font-fam;
+    font-weight: 300;
+}
+.hm--text2{
+    width: 100%;
+    @include flexrow(row);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 37%;
+    color: white;
+    font-family: $font-fam;
+    
+}
+.fc--item{
+    font-family: $font-fam;
+    position: relative;
+    padding: 0 17px;
+    cursor: pointer;
+  
+}
+.fc--searchHolder{
+    top: 20%;
+    font-size: 15px;
+    position: absolute;
+    width: 20%;
+    margin-left: 60%;
+    color: #b0aaa8;
+}
+.fc--item:hover{
+    color: #AD9D48;
+}
+.hm--text >h3{
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+.add--searchInput{
+    color: greenyellow;
+    font-family: $font-fam;
+    font-size: 30px;
+}
+hr{
+    border: 0.5px solid white;
+}
+.hm--header{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    @include flexrow(column);
+    justify-content: space-evenly;
+
+}
+.hm--weather{
+    position: relative;
+    @include flexrow(row);
+    justify-content: center;
+    width: 350px;
+ 
+}
+.hm--location--place{
+    font-family: $font-fam;
+    opacity: 0.5;
+    position: absolute;
+    left: 70%;
+   
+}
+
+.hm--weather--container{
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/map.jpg);
+    background-size: cover;
+    @include flexrow(column);
+    justify-content: space-around;
+}
+.hm--city--input{
+    position: relative;
+    width: 100%;
+    text-indent: 10%;
+    font-size: 17px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+}
+.hm--malawiL--weatherData{
+    width: 35%;
+    height: 55%;
+    background-color:rgba(0,0,0,0.5);
+    color: black;
+  
+    border-radius: 5px;
+    @include flexrow(column);
+    justify-content: center;
+    
+}
+.footer{
+    @include flexrow(column);
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    text-align: center;
+
+}
+.ns--container{
+    @include flexrow(column);
+    justify-content: space-around;
+    text-align: center;
+    font-family: $font-fam;
+    font-weight: 700;
+    
+}
+.ns--main--container{
+   
+    position: relative;
+}
+.ns--citybtn--container{
+    top: 0%;
+    left:90%;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    max-height: 400px;
+    background-color: #E1E4ED;
+    @include flexrow(column);
+    overflow-y:auto;
+
+    
+
+}
+.ns-citybtn{
+    cursor: pointer;
+    color: white;
+    margin: 2px 0;
+    width: 85%;
+    height: 40px;
+    background-color: #102048;
+    border: none;
+    @include flexrow(column);
+    justify-content: center;
+
+}
+.ns--citycity{
+    @include flexrow(column);
+    justify-content: center;
+    width: 100%;
+}
+.alert--description{
+    padding: 0 5px;
+    border-radius: 5px;
+    @include flexrow(column);
+    justify-content: center;
+    background-color: #C94A4A;
+    color: white;
+    width: 491px;
+    height: 120px;
+    margin-top: 7px;
+    max-width: 480px;
+    text-align:left;
+}
+.item_1, .item_2{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0;
+    color: black;
+}
+.ns--news--container{
+    margin-top:15px;
+}
+.ns--city--container{
+    margin-top: 15px;
+}
+
+.fc--container{
+    background-color: #b0aaa8;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+}
+.fc--container2{
+    position: relative;
+}
+.fc--search--location{
+    border-radius: 5px;
+    font-size: 17px;
+    text-indent: 10%;
+    height: 35px;
+    width: 200px;
+    outline: 1px solid #ffffff;
+    background-color:rgba( #102048,  0.7) ;
+    color: white;
+    border: none;
+}
+.fc--main--container{
+    
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba($color: #f4ecec, $alpha: 0.7);
+    color: rgb(37, 35, 35);
+    font-size: $font-fam;
+    display: grid;
+    grid-template: auto span / 50px 50px 50px 50px 50px ;
+}
+
+@for $j from 1 through 5 {
+    .data_#{$j}{
+        margin:0 auto;
+        width: 100px;
+        height: 50px;
+        padding: 5px 0;
+        grid-row: 1/ 2;
+        font-family: 'Poppins' , sans-serif;
+        color: #151515;
+        text-align: center;
+        
+    }
+    .fc--icon{
+       
+        padding: 7px 0;
+        font-size: 25px;
+        grid-row: 2 / 3;
+        color: rgb(161, 137, 33);
+        text-align: center;
+    }
+    .value_#{$j}{
+        margin: auto;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Poppins';
+        padding: 10px 0;
+        grid-row: 3 /4;
+
+      
+    
+       
+   
+    }
+   
+ 
+    
+}
+@for $j from 1 to 4 {
+    .hr_#{$j}{
+        margin-top: 5px;
+        border: 1.5px solid rgb(30, 120, 128);
+        width:120px/$j ;
+    }
+    
+}
+.fc--forecast{
+    font-family: $font-fam;
+    @include flexrow(column);
+    justify-content: center;
+    padding: 10px 0;
+    color: #76726a;
+}
+.ed--weather--components--container{
+    @include flexrow(column);
+    justify-content: space-between;
+
+}
+.weather--components{
+    width: 100%;
+    flex-wrap: wrap;
+    @include flexrow(row);
+    justify-content: space-evenly;
+    font-family: $font-fam;
+}
+.weather--conditions{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include flexrow(row);
+    font-family: $font-fam;
+
+}
+.ed--lesson--title{
+    padding: 5px 0;
+}
+.class{
+    position: relative;
+    margin-top: 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+    width: 270px;
+    height: 220px;
+    @include flexrow(column);
+    cursor: pointer;
+    
+  
+}
+.class:hover >.ed--lesson--title{
+    top: 45%;
+    font-size: 25px;
+    position: absolute;
+    color: white;
+}
+.class:hover > .lessonImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.lessonImage{
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px ;
+    width: 100%;
+    height: 85%;
+}
+.ed--agenda{
+    color: #AD9D48;
+    font-family: $font-fam;
+    margin-Top: 20px;
+}
+.ed--more{
+    cursor: pointer;
+    color: #7f6e1a;
+    padding: 5px 0;
+    font-size: 50px;
+}
+.ct--dedicated--container{
+    justify-content: center;
+    width: 100%;
+    @include flexrow(row);
+    font-family: $font-fam;
+}
+.ct--dedicated{
+    padding: 10px 27px;
+    text-align: center;
+    box-shadow: 0px 1px grey;
+}
+.ct--donate--container{
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 20%;
+    height: 250px;
+    background-color:#F5F5F5 ;
+    @include flexrow(column);
+    font-family: $font-fam;
+}
+.ct--donate--btn{
+    cursor: pointer;
+    width: 70%;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    background-color: #6C923B;
+    border: none;
+}
+.ct--find--container{
+    margin: 10px 0 ;
+    @include flexrow(row);
+    justify-content: space-around;
+    width: 100%;
+    font-family: $font-fam;
+}
+.ct--fb--container, .ct--insta--container , .ct--twitter--container{
+    @include flexrow(column);
+    justify-content: space-around;
+    height: 70px;
+}
+
+.ct--find{
+    cursor: pointer;
+    @include flexrow(column);
+}
+.ct--social{
+    cursor: pointer;
+    font-size: 25px;
+    color: #4A8CC9;
+}
+.hr3{
+    border: 0.5px solid #4A8CC9;
+    margin-bottom: 10px;
+
+}
+.hr2{
+    display: none;
+    border: 0.5px solid green;
+    margin-bottom: 10px;
+}
+.hr{
+    border: 0.5px solid grey;
+}
+.nv--deco--lines{
+    display: none;
+}
+
+.weatherUpdates{
+    padding: 10px 0;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+}
+.ns--city{
+    text-align: center;
+    @include flexrow(column);
+    justify-content: center;
+    background-color: #4A8CC9;
+    width: 132px;
+    height: 52px;
+    margin-top: 7px;
+
+}
+.link{
+    font-family: $font-fam;
+    color: white;
+}
+.menu--items{
+    color: white;
+    padding: 0 10px;
+    @include flexrow(row);
+    opacity: 1;
+}
+.menu--items > li{
+    color: white;
+    opacity: 1;
+    padding: 0 25px;
+    font-size: 25px;
+}
+.nav--more{
+    color: #b19e3c;
+}
+.nav--container1{
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #162D67;
+    position: absolute;
+    background-size: cover;
+    color: $main-text-color;
+    font-family: $main-font;
+    opacity: 0.5;
+}
+.nav--container2{
+    @include flexrow(row);
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    color: $main-text-color;
+    font-family: $main-font;
+    position: relative;
+   
+}
+.nav--container{
+    background-image: url(./images/bak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px
+
+}
+.nav--container2 > h3{
+    padding: 0 10px;
+    font-size: 30px;
+    color: #F4F4F4;
+    font-family: sans-serif;
+    opacity: 1;
+}
+@media (max-width:700px) {
+    .menu--items{
+        color: white;
+        padding: 0 10px;
+        @include flexrow(column);
+        align-items: baseline;
+        opacity: 1;
+    }
+
+    .nav--container2{
+        position: relative;
+        width: 100%;
+        @include flexrow(row);
+        justify-content: space-between;
+    }
+    .menu--items > li{
+        color: white;
+        font-size: 25px;
+        padding: 7px 0;
+    }
+    .nav--more{
+        display: none;
+    }
+    .hm--text>h3{
+        padding: 3px;
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .hm--text{
+        top: 60%;
+        position: absolute;
+
+    }
+    .hm--text2{
+        width: 100%;
+        @include flexrow(row);
+        flex-wrap: wrap;
+        position: absolute;
+        justify-content: space-evenly;
+        top: 60%;
+        font-size: 15px;
+        color: white;
+        font-family: $font-fam;
+
+    }
+    .fc--item{
+        margin: 5px;
+        width: 35%;
+       
+    }
+    .line{
+       display: none;
+    }
+    .fc--search--location{
+        width: 100%;
+    }
+    .hm--alert{
+        color: white;
+        font-family: $font-fam;
+
+    }
+    .nav--container2 > h3{
+        font-size: 17px;
+    }
+    .hm--city--input{
+        width: 100%;
+    }
+    .hm--malawiL--weatherData{
+        width: 90%;
+    }
+    .nav--container , .nav--container1 , .nav--container2{
+        height: 400px;
+    }
+    .fc--main--container{
+        font-size: 13px;
+        margin: 0 0;
+        width: 80%;
+    }
+    .ns--citybtn--container{
+        top: 0%;
+        left:80%;
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        max-height: 400px;
+        background-color: #E1E4ED;
+        @include flexrow(column);
+        overflow-y:auto;
+        
+    }
+    @for $j from 1 through 5 {
+        .data_#{$j}{
+            width: fit-content;
+            height: 50px;
+            padding: 5px 0px;
+            grid-row: 1/ 2;
+            font-family: 'Poppins' , sans-serif;
+            color: #151515;
+            text-align: center;
+            
+        }
+        .fc--icon{
+            padding: 7px 0;
+            font-size: 20px;
+            grid-row: 2 / 3;
+            color: rgb(161, 137, 33);
+            text-align: center;
+        }
+        .value_#{$j}{
+            margin: auto;
+            width: 70px;
+            height: 50px;
+            text-align: center;
+            font-family: 'Poppins';
+            padding: 10px 0;
+            grid-row: 3 /4;
+    
+          
+        
+           
+       
+        }
+       
+     
+        
+    }
+    .ns--container{
+        width: 80%;
+        @include flexrow(column);
+        justify-content: space-around;
+        text-align: center;
+        font-family: $font-fam;
+        font-weight: 700;
+        
+    }
+    .ct--donate--container{
+        justify-content: space-around;
+        margin: 10px auto;
+        width: 70%;
+        height: 250px;
+        background-color:#F5F5F5 ;
+        @include flexrow(column);
+        font-family: $font-fam;
+    }
+    .ns--news--container{
+        
+        margin-top:15px;
+    }
+    .ns--city--container{
+     
+        margin-top: 15px;
+    }
+    .alert--description{
+        padding: 0 5px;
+        border-radius: 5px;
+        @include flexrow(column);
+        justify-content: center;
+        background-color: #C94A4A;
+        color: white;
+        width: 300px;
+        height: 120px;
+        margin-top: 7px;
+        max-width: 480px;
+        text-align:left;
+    }
+    .nv--deco--lines{
+        display: block;
+        width: 100px;
+    }
+    @for $j from 1 to 5 {
+        .hrd_#{$j}{
+            border: 2px solid rgb(208, 122, 23);
+            margin-top: 3px;
+            width: 100px/$j * 0.7;
+        }
+        .hrde_#{$j}{
+            border: 2px solid rgb(208, 122, 23);
+            margin-top: 3px;
+            width: 100px/$j * 0.7;
+        }
+        
+    }
+    .link:hover{
+        color: rgb(208, 122, 23);
+    }
+    
+}
+@media (max-width:400px) {
+    .ct--donate--container{
+        justify-content: space-around;
+        margin: 10px auto;
+        width: 90%;
+        height: 250px;
+        background-color:#F5F5F5 ;
+        @include flexrow(column);
+        font-family: $font-fam;
+    }
+    
+    
+}

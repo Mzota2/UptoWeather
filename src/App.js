@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MainComponent from "./components/Main";
+import NavComponent from "./components/NavBar";
+import {Routes , Route} from 'react-router-dom';
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import News from "./components/News";
+import Education from "./components/Education";
+import Forecast from "./components/Forecast";
+import Error from './components/Error';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+
+
+        
+    
+    return(
+        <div>
+            <NavComponent/>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/contact' element={<Contact/>}/>
+                <Route path='/news' element={<News/>}/>
+                <Route path='/education' element={<Education/>}/>
+                <Route path='/forecast' element={<Forecast/>}/>
+                <Route path='*' element={<Error/>}/>
+            </Routes>
+          
+        </div>
+    )
 }
-
-export default App;
