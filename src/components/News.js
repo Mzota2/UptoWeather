@@ -2,6 +2,7 @@ import React from "react";
 import districtInfo from "./districtData";
 
 export default function News(){
+    const[showLocations , setShowLocations]=React.useState(false);
     const [weatherData , setWeatherData] = React.useState({});
     const [searchCity, setSearchCity] = React.useState({
         city:'Lilongwe'
@@ -16,6 +17,9 @@ export default function News(){
     const [districtData , setDistrictData] = React.useState();
 
   
+    function handleShowLocation(){
+        setShowLocations(!showLocations);
+    }
 
     function handleChange(e){
         setSearchCity(prevData =>{
@@ -33,6 +37,7 @@ export default function News(){
 
               function handleClick(){
                 console.log(info.lat);
+                setShowLocations(false);
 
                 setLocation(prevData =>{
                     return{
@@ -43,6 +48,7 @@ export default function News(){
                         
                     }
                 })
+                
 
               }
               const district = info.district;
@@ -50,7 +56,7 @@ export default function News(){
               const longitude = info.lon;
 
               return(
-                <div className="ns--citycity">
+                <div  className="ns--citycity">
                     <button className="ns-citybtn" onClick={handleClick}>{info.district}</button>
                 </div>
               )
@@ -106,7 +112,9 @@ export default function News(){
             </div>
 
             <div className="ns--citybtn--container">
-                {districtData}
+                <p className="showLocation" onClick={handleShowLocation}>Locations <i class="ed--show fas fa-caret-down"></i></p>
+                {showLocations? districtData:console.log('none')}
+                
             
 
             </div>

@@ -81,6 +81,13 @@ $main-font:sans-serif;
 .fc--item:hover{
     color: #AD9D48;
 }
+.showLocation{
+    cursor: pointer;
+    @include flexrow(column);
+    justify-content: center;
+    padding: 10px 0;
+    font-family: 'Poppins';
+}
 .hm--text >h3{
     padding: 10px 0;
     font-size: 20px;
@@ -173,7 +180,7 @@ hr{
     width: 10%;
     height: 100%;
     max-height: 400px;
-    background-color: #E1E4ED;
+    
     @include flexrow(column);
     overflow-y:auto;
 
@@ -196,6 +203,7 @@ hr{
     @include flexrow(column);
     justify-content: center;
     width: 100%;
+    background-color: #E1E4ED;
 }
 .alert--description{
     padding: 0 5px;
@@ -223,6 +231,7 @@ hr{
 }
 
 .fc--container{
+   
     background-color: #b0aaa8;
     width: 100%;
     height: fit-content;
@@ -230,6 +239,7 @@ hr{
 }
 .fc--container2{
     position: relative;
+   
 }
 .fc--search--location{
     border-radius: 5px;
@@ -306,6 +316,7 @@ hr{
     justify-content: center;
     padding: 10px 0;
     color: #76726a;
+    position: relative;
 }
 .ed--weather--components--container{
     @include flexrow(column);
@@ -550,7 +561,7 @@ hr{
         flex-wrap: wrap;
         position: absolute;
         justify-content: space-evenly;
-        top: 60%;
+        top: 58%;
         font-size: 15px;
         color: white;
         font-family: $font-fam;
@@ -587,7 +598,7 @@ hr{
     .fc--main--container{
         font-size: 13px;
         margin: 0 0;
-        width: 80%;
+        width: 100%;
     }
     .ns--citybtn--container{
         top: 0%;
@@ -596,10 +607,21 @@ hr{
         width: 20%;
         height: 100%;
         max-height: 400px;
-        background-color: #E1E4ED;
         @include flexrow(column);
         overflow-y:auto;
         
+    }
+    .ed--show{
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .showLocation{
+        cursor: pointer;
+        @include flexrow(column);
+        justify-content: center;
+        padding: 10px 0;
+        font-family: 'Poppins';
     }
     @for $j from 1 through 5 {
         .data_#{$j}{
@@ -636,6 +658,16 @@ hr{
        
      
         
+    }
+    .fc--container{
+        position: relative;
+        background-color: #b0aaa8;
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0px;
+    }
+    .fc--container2{
+        position: static;
     }
     .ns--container{
         width: 80%;

@@ -10,9 +10,12 @@ export default function Forecast(){
     const [weatherData , setWeatherData] = React.useState([]); 
     const [currentData , setCurrentData] = React.useState([]);
     const [hourlyData , setHourlyData] = React.useState([]);
-    const [dailyData , setDailyData] = React.useState([]);
+    const [forecast, setForecast] = React.useState({
+        value:'Current Forecast'
+    });
     const [dailyDataset , setDailyDataSet] = React.useState();
     const [clicked , setClicked] = React.useState(false);
+    const[showLocations , setShowLocations]=React.useState(false);
  
     const [searchCity, setSearchCity] = React.useState({
         city:' '
@@ -23,7 +26,13 @@ export default function Forecast(){
         district:'Blantyre'
     })
     const [districtData , setDistrictData] = React.useState();
+    function handleShowLocation(){
+        setShowLocations(!showLocations);
+    }
 
+    function setFalse(){
+        setShowLocations(false);
+    }
     function searchLocation(){
         console.log(searchCity.city);
         let searchString = searchCity.city.toLowerCase();
@@ -63,14 +72,32 @@ export default function Forecast(){
 
     function checkForecast(e){
         if(e.target.textContent === 'Current Forecast'){
+            setForecast(prevData =>{
+                return{
+                    ...prevData,
+                    value:'Current Forecast'
+                }
+            })
             setClicked(false);
             setWeatherData(currentData);
         }
         else if(e.target.textContent === 'Hourly Forecast'){
+            setForecast(prevData =>{
+                return{
+                    ...prevData,
+                    value:'Houry Forecast'
+                }
+            })
             setClicked(true);
             setWeatherData(hourlyData);
         }
         else if(e.target.textContent === 'Daily Forecast'){
+            setForecast(prevData =>{
+                return {
+                    ...prevData,
+                    value:'DailyForecast'
+                }
+            })
             setClicked(true);
             setWeatherData(dailyDataset);
            
@@ -92,6 +119,7 @@ export default function Forecast(){
         const  data = infoDistrict.map((info)=>{
               //making api calls
               function handleClick(){
+                setShowLocations(false);
                 setLocation(prevData =>{
                     return{
                         ...prevData,
@@ -273,9 +301,8 @@ export default function Forecast(){
 
 
     return(
-        <div >
-            <div className="fc--container">
-            <nav className="hm--text2">
+        <div  >
+            <nav className="hm--text2 fc--cast">
                 <h3 onClick={checkForecast} className="fc--item">Current Forecast
                     <hr className="line"/>
                 </h3>
@@ -284,14 +311,16 @@ export default function Forecast(){
 
                 <h3 className="fc--item"><input onClick={searchLocation} onChange={handleChange} name="city" className="fc--search--location" placeholder="search" value={searchCity.city} type ='text' /> </h3>
             </nav>
+            <div className="fc--container" >
+            
             <div className="fc--forecast">
-                    <h3>Hourly Forecast</h3>
+                    <h3>{forecast.value}</h3>
                     <hr className="hr_1"/>
                     <hr className="hr_2"/>
                     <hr className="hr_3"/>
             </div>
-            <div className="fc--container2">
-            <div className="fc--main--container">
+            <div className="fc--container2" >
+            <div className="fc--main--container" onClick={setFalse}>
                     <h4 className="fc--location data_1">Location</h4>
                     <p className="fc--location--value value_1 fc--icon">{location.district}</p>
                    
@@ -327,7 +356,8 @@ export default function Forecast(){
         
                 </div>}
             <div className="ns--citybtn--container">
-                {districtData}
+                <p className="showLocation" onClick={handleShowLocation}>Locations <i class="ed--show fas fa-caret-down"></i></p>
+                {showLocations? districtData:console.log('none')}
             
             </div>
 
