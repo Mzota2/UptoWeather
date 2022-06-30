@@ -620,7 +620,7 @@ hr{
         cursor: pointer;
         @include flexrow(column);
         justify-content: center;
-        padding: 10px 0;
+        padding: 10px 5px;
         font-family: 'Poppins';
     }
     @for $j from 1 through 5 {
