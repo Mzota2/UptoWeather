@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/UptoWeather/static/css/main.1f9d7d40.css",
+    "main.css": "/UptoWeather/static/css/main.be1bd3d2.css",
     "main.js": "/UptoWeather/static/js/main.540f2492.js",
     "static/media/weather2.jpg": "/UptoWeather/static/media/weather2.c852a294942c91ec64de.jpg",
     "static/media/weather3.jpg": "/UptoWeather/static/media/weather3.5d956b4fd9ed445b6862.jpg",
@@ -17,11 +17,11 @@
     "static/media/tornado.jpg": "/UptoWeather/static/media/tornado.5814e83c37dca620efe8.jpg",
     "static/media/storm.jpg": "/UptoWeather/static/media/storm.f1336a495985e79af062.jpg",
     "index.html": "/UptoWeather/index.html",
-    "main.1f9d7d40.css.map": "/UptoWeather/static/css/main.1f9d7d40.css.map",
+    "main.be1bd3d2.css.map": "/UptoWeather/static/css/main.be1bd3d2.css.map",
     "main.540f2492.js.map": "/UptoWeather/static/js/main.540f2492.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f9d7d40.css",
+    "static/css/main.be1bd3d2.css",
     "static/js/main.540f2492.js"
   ]
 }
