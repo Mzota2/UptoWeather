@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/UptoWeather/static/css/main.2fc2169e.css",
-    "main.js": "/UptoWeather/static/js/main.75df09ea.js",
+    "main.js": "/UptoWeather/static/js/main.7c5a0f5d.js",
     "static/media/weather2.jpg": "/UptoWeather/static/media/weather2.c852a294942c91ec64de.jpg",
     "static/media/weather3.jpg": "/UptoWeather/static/media/weather3.5d956b4fd9ed445b6862.jpg",
     "static/media/weather1.jpg": "/UptoWeather/static/media/weather1.a9d7b9c0099d21af5649.jpg",
@@ -18,10 +18,10 @@
     "static/media/storm.jpg": "/UptoWeather/static/media/storm.f1336a495985e79af062.jpg",
     "index.html": "/UptoWeather/index.html",
     "main.2fc2169e.css.map": "/UptoWeather/static/css/main.2fc2169e.css.map",
-    "main.75df09ea.js.map": "/UptoWeather/static/js/main.75df09ea.js.map"
+    "main.7c5a0f5d.js.map": "/UptoWeather/static/js/main.7c5a0f5d.js.map"
   },
   "entrypoints": [
     "static/css/main.2fc2169e.css",
-    "static/js/main.75df09ea.js"
+    "static/js/main.7c5a0f5d.js"
   ]
 }
