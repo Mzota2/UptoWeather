@@ -309,7 +309,7 @@ export default function Forecast(){
                 <h3 onClick={checkForecast} className="fc--item">Hourly Forecast<hr className="line"/></h3>
                 <h3 onClick={checkForecast} className="fc--item">Daily Forecast<hr className="line"/></h3>
 
-                <h3 className="fc--item"><input onClick={searchLocation} onChange={handleChange} name="city" className="fc--search--location" placeholder="search" value={searchCity.city} type ='text' /> </h3>
+               
             </nav>
             <div className="fc--container" >
             
