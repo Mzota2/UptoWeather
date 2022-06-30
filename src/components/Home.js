@@ -93,7 +93,7 @@ export default function Home(){
             <div className="hm--weather--container">
                 <div className="hm--weather">
                 <input name="city" value={searchCity.city} onClick={searchLocation} onChange={handleChange} className="hm--city--input" type='text' placeholder="Search"/>
-                <p className="hm--location--place">Location</p>
+                <p onClick={searchLocation} className="hm--location--place">Location</p>
 
                 </div>
                
