@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.135e3337.css",
-    "main.js": "/static/js/main.0ee6343f.js",
-    "static/media/weather2.jpg": "/static/media/weather2.c852a294942c91ec64de.jpg",
-    "static/media/weather3.jpg": "/static/media/weather3.5d956b4fd9ed445b6862.jpg",
-    "static/media/weather1.jpg": "/static/media/weather1.a9d7b9c0099d21af5649.jpg",
-    "static/media/map.jpg": "/static/media/map.261299a6faef6c91b586.jpg",
-    "static/media/bak.jpg": "/static/media/bak.8539ef22bf712f03452c.jpg",
-    "static/media/humidity.jpg": "/static/media/humidity.a9cdc2e0d7823357ef64.jpg",
-    "static/media/pressure.jpg": "/static/media/pressure.2292dacc483de5a47b7c.jpg",
-    "static/media/cyclone.jpg": "/static/media/cyclone.4af35bf46cc9176a327f.jpg",
-    "static/media/floods.jpg": "/static/media/floods.e7f30e49d321c32ae7a8.jpg",
-    "static/media/temperature.jpg": "/static/media/temperature.c803b398f63613c9c4fe.jpg",
-    "static/media/lightening.jpg": "/static/media/lightening.27740887a2c5c4d0d3c8.jpg",
-    "static/media/wind.jpg": "/static/media/wind.6b520d6ec1a5197fd6fc.jpg",
-    "static/media/tornado.jpg": "/static/media/tornado.5814e83c37dca620efe8.jpg",
-    "static/media/storm.jpg": "/static/media/storm.f1336a495985e79af062.jpg",
-    "index.html": "/index.html",
-    "main.135e3337.css.map": "/static/css/main.135e3337.css.map",
-    "main.0ee6343f.js.map": "/static/js/main.0ee6343f.js.map"
+    "main.css": "/UptoWeather/static/css/main.03fe9822.css",
+    "main.js": "/UptoWeather/static/js/main.4636667d.js",
+    "static/media/weather2.jpg": "/UptoWeather/static/media/weather2.c852a294942c91ec64de.jpg",
+    "static/media/weather3.jpg": "/UptoWeather/static/media/weather3.5d956b4fd9ed445b6862.jpg",
+    "static/media/weather1.jpg": "/UptoWeather/static/media/weather1.a9d7b9c0099d21af5649.jpg",
+    "static/media/map.jpg": "/UptoWeather/static/media/map.261299a6faef6c91b586.jpg",
+    "static/media/bak.jpg": "/UptoWeather/static/media/bak.8539ef22bf712f03452c.jpg",
+    "static/media/humidity.jpg": "/UptoWeather/static/media/humidity.a9cdc2e0d7823357ef64.jpg",
+    "static/media/pressure.jpg": "/UptoWeather/static/media/pressure.2292dacc483de5a47b7c.jpg",
+    "static/media/cyclone.jpg": "/UptoWeather/static/media/cyclone.4af35bf46cc9176a327f.jpg",
+    "static/media/floods.jpg": "/UptoWeather/static/media/floods.e7f30e49d321c32ae7a8.jpg",
+    "static/media/temperature.jpg": "/UptoWeather/static/media/temperature.c803b398f63613c9c4fe.jpg",
+    "static/media/lightening.jpg": "/UptoWeather/static/media/lightening.27740887a2c5c4d0d3c8.jpg",
+    "static/media/wind.jpg": "/UptoWeather/static/media/wind.6b520d6ec1a5197fd6fc.jpg",
+    "static/media/tornado.jpg": "/UptoWeather/static/media/tornado.5814e83c37dca620efe8.jpg",
+    "static/media/storm.jpg": "/UptoWeather/static/media/storm.f1336a495985e79af062.jpg",
+    "index.html": "/UptoWeather/index.html",
+    "main.03fe9822.css.map": "/UptoWeather/static/css/main.03fe9822.css.map",
+    "main.4636667d.js.map": "/UptoWeather/static/js/main.4636667d.js.map"
   },
   "entrypoints": [
-    "static/css/main.135e3337.css",
-    "static/js/main.0ee6343f.js"
+    "static/css/main.03fe9822.css",
+    "static/js/main.4636667d.js"
   ]
 }
